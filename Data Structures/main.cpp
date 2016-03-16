@@ -9,6 +9,32 @@
 #include <iostream>
 #include "List.h"
 #include "Stack.h"
+#include "Queue.h"
+
+void queue_test(Queue **queue)
+{
+    printf("\nstack test:\n");
+
+    Queue *dequeued_node = dequeue(*queue);
+    printf("dequeued_node 1: %d\n", dequeued_node->item);
+    list_free(dequeued_node);
+
+    dequeued_node = dequeue(*queue);
+    printf("dequeued_node 2: %d\n", dequeued_node->item);
+    list_free(dequeued_node);
+
+    enqueue(queue, 21);
+    enqueue(queue, 22);
+    enqueue(queue, 23);
+    enqueue(queue, 24);
+    enqueue(queue, 25);
+
+    dequeued_node = dequeue(*queue);
+    printf("dequeued_node 3: %d\n", dequeued_node->item);
+    list_free(dequeued_node);
+
+    list_description(*queue);
+}
 
 void stack_test(Stack **stack)
 {
@@ -51,6 +77,7 @@ int main(int argc, const char * argv[])
 
     list_test(&list);
     stack_test(&list);
+    queue_test(&list);
 
     list_free(list);
 
