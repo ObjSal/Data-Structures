@@ -26,6 +26,7 @@
 		3E236BD31C98FAC900F59569 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E236BD61C98FAC900F59569 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3E236BDE1C99087400F59569 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = gists/4469c6263afb1d0dce41/List.h; sourceTree = SOURCE_ROOT; };
+		3E236BDF1C9910E100F59569 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = gists/2444540da062e837ff9a/Stack.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			children = (
 				3E236BD61C98FAC900F59569 /* main.cpp */,
 				3E236BDE1C99087400F59569 /* List.h */,
+				3E236BDF1C9910E100F59569 /* Stack.h */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -239,6 +241,7 @@
 				3E236BDC1C98FAC900F59569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
