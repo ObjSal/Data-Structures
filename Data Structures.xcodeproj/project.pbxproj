@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E1F59A61C9A56CD00F64890 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryTree.h; path = gists/aa19fea6b2084a5c5a1f/BinaryTree.h; sourceTree = SOURCE_ROOT; };
 		3E236BD31C98FAC900F59569 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E236BD61C98FAC900F59569 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3E236BDE1C99087400F59569 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = gists/4469c6263afb1d0dce41/List.h; sourceTree = SOURCE_ROOT; };
@@ -60,10 +61,11 @@
 		3E236BD51C98FAC900F59569 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				3E236BD61C98FAC900F59569 /* main.cpp */,
 				3E236BDE1C99087400F59569 /* List.h */,
 				3E236BDF1C9910E100F59569 /* Stack.h */,
 				3E236BE01C99172500F59569 /* Queue.h */,
+				3E1F59A61C9A56CD00F64890 /* BinaryTree.h */,
+				3E236BD61C98FAC900F59569 /* main.cpp */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";

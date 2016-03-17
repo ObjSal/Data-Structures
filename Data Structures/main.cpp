@@ -10,6 +10,7 @@
 #include "List.h"
 #include "Stack.h"
 #include "Queue.h"
+#include "BinaryTree.h"
 
 void queue_test(Queue **queue)
 {
@@ -55,8 +56,6 @@ void stack_test(Stack **stack)
 
 void list_test(struct list **list)
 {
-    printf("\nlist test:\n");
-
     list_insert(list, 11);
     list_insert(list, 12);
     list_insert(list, 13);
@@ -70,8 +69,10 @@ void list_test(struct list **list)
     list_description(*list);
 }
 
-int main(int argc, const char * argv[])
+void list_tests()
 {
+    printf("\nLists tests:\n");
+
     struct list *list = (struct list *)calloc(1, sizeof(struct list));
     list->item = 10;
 
@@ -80,6 +81,48 @@ int main(int argc, const char * argv[])
     queue_test(&list);
 
     list_free(list);
+}
+
+void tree_tests()
+{
+    printf("\nTrees tests:\n");
+
+    struct Tree *tree = NULL;
+
+    tree_insert(&tree, 2);
+    tree_insert(&tree, 1);
+    tree_insert(&tree, 7);
+    tree_insert(&tree, 4);
+    tree_insert(&tree, 8);
+    tree_insert(&tree, 3);
+    tree_insert(&tree, 6);
+    tree_insert(&tree, 5);
+    tree_traverse(tree);
+
+    printf("delete 3:\n");
+    tree_delete(&tree, 3);
+    tree_traverse(tree);
+
+    printf("delete 6:\n");
+    tree_delete(&tree, 6);
+    tree_traverse(tree);
+
+    printf("delete 4:\n");
+    tree_delete(&tree, 4);
+    tree_traverse(tree);
+
+    printf("insert 9:\n");
+    tree_insert(&tree, 9);
+    tree_traverse(tree);
+
+    tree_free(tree);
+}
+
+int main(int argc, const char * argv[])
+{
+    list_tests();
+
+    tree_tests();
 
     return 0;
 }
